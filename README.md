@@ -2,8 +2,6 @@
 
 ### Overview
 
-YO!YO YO!!
-
 The web is an ever growing medium and it is getting more and more difficult to filter useful information. In our journey to writing beautiful JavaScript, we have come and will come across a great many reference points that will guide our learning. This is where personal feeds come in very useful. Online feeds are like to-do lists in that they can be infinitely personalized and there is not one solution that works for everybody.
 
 For our Unit 2 project we will build __Feedr__, a personalized feed reader. Our feed reader will pull feeds from our favorite blogs. The user will be able to filter between publications through the dropdown on the header menu. Clicking/tapping on one of the articles will load a pop up with more information. The user from that point will be able to either dismiss the additional information or go to the referenced article.
@@ -16,7 +14,7 @@ This will be our first single page app. All of our application views will be con
 
 **Feed sources**:
 
-Give the user the ability to pull from a multiple news sources. [Here](https://en.wikipedia.org/wiki/List_of_news_media_APIs) is a list of several.
+Give the user the ability to pull from multiple news sources. [Here](https://en.wikipedia.org/wiki/List_of_news_media_APIs) is a list of several.
 
 You should also feel free to use other news APIs; however, you will find that many APIs that do not support either [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) or [JSONp](https://en.wikipedia.org/wiki/JSONP) will result in a cross-domain restriction error (``"No 'Access-Control-Allow-Origin' header is present..."``) in the browser. To get around this, you can use the following proxy server to filter your API requests.
 
