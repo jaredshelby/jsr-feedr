@@ -52,8 +52,8 @@ requirements:
 **Additional UI interaction rules:**
 
 <!-- - When the user clicks/taps the search icon, expand the input box. Best approach for this is to toggle the `.active` class for the `#search` container. If the search input box is already expanded tapping the search icon again will close the input. Pressing the "Enter" key should also close the opened input box. --> _See Stretch Goal 2 for search filtering functionality._
-- When the app is first loading and when the user selects to load a new feed from the dropdown, display the `#popUp` container with the `.loader` class. You can toggle the `.hidden` class from the container to display/hide the overlay container.
-- Add functionality to hide the pop-up when user selects the "X" button on the pop-up.
+<!-- - When the app is first loading and when the user selects to load a new feed from the dropdown, display the `#popUp` container with the `.loader` class. You can toggle the `.hidden` class from the container to display/hide the overlay container. -->
+<!-- - Add functionality to hide the pop-up when user selects the "X" button on the pop-up. -->
 - Clicking/tapping the "Feedr" logo will display the main/default feed.
 
 #### Stretch Goals

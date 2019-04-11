@@ -12,6 +12,7 @@
   width: 100%;
   height: 100%;
   background:  #fff;
+  z-index: 1;
 }
 
 #popUp .closePopUp {
@@ -234,4 +235,23 @@ nav ul ul li {
   margin-top: 15px;
   text-align: right;
   color: #097FB2;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    background-color: red;
+    width: 100%;  
+}
+
+footer span {
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-left: 30px;
+    position: absolute;
+}
+
+footer span a {
+    color: #FFFFFF;
 }
