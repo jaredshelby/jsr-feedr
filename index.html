@@ -20,17 +20,26 @@
 
         <header>
           <section class="container">
-            <a href="#"><h1>Feedr</h1></a>
+            <a class="logo" href="#"><h1>Feedr</h1></a>
             <nav>
-              <ul>
+              <ul class="source-list">
                 <li><a href="#">News Source: <span>Source Name</span></a>
                   <ul>
-                      <li><a href="#">Source 1</a></li>
-                      <li><a href="#">Source 2</a></li>
-                      <li><a href="#">Source 3</a></li>
+                      <li><a class="cnn-link" href="#">CNN</a></li>
+                      <li><a class="espn-link" href="#">ESPN</a></li>
+                      <li><a class="nytimes-link" href="#">The New York Times</a></li>
                   </ul>
                 </li>
               </ul>
+<!--               <ul class="cat-list">
+                <li><a href="#">News Category:</a>
+                  <ul>
+                      <li><a href="#">Entertainment</a></li>
+                      <li><a href="#">Sports</a></li>
+                      <li><a href="#">Technology</a></li>
+                  </ul>
+                </li>
+              </ul> -->
               <section id="search">
                 <input type="text" name="name" value="">
                 <a href="#"><img src="images/search.png" alt="" /></a>
@@ -42,15 +51,17 @@
         <div id="popUp" class="loader">
           <a href="#" class="closePopUp">X</a>
           <div class="container">
-            <h1>Article title here</h1>
+            <h1><!-- Article title here --></h1>
+            <h3></h3>
+            <img src="" class="art-image" alt="" />
             <p>
-              Article description/content here.
+              <!-- Article description/content here. -->
             </p>
             <a href="#" class="popUpAction" target="_blank">Read more from source</a>
           </div>
         </div>
         <section id="main" class="container">
-          <article class="article">
+          <!-- <article class="article">
             <section class="featuredImage">
               <img src="images/article_placeholder_1.jpg" alt="" />
             </section>
@@ -101,10 +112,10 @@
               526
             </section>
             <div class="clearfix"></div>
-          </article>
+          </article> -->
         </section>
         <footer>
-          <span>Powered by <a href="https://newsapi.org/">NewsAPI</a>.</span>
+          <span>Powered by <a href="https://newsapi.org/" target="_blank">NewsAPI</a>.</span>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
