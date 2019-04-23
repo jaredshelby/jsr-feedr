@@ -88,11 +88,12 @@ header {
 
 header h1 {
   color: #FFF;
-  padding: 10px 2%;
+  /*padding: 10px 2%;*/
+  padding: 10px 1% 10px 1%;
   margin: 0;
   width: 16%;
   float: left;
-  padding-left: 0;
+  /*padding-left: 0;*/
 }
 
 /* Header navigation bar */
@@ -237,12 +238,18 @@ nav ul ul li a:hover {
   float: left;
   margin: 1.5%;
   max-width: 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .article .featuredImage img {
-  max-width: 100%;
-  border-radius: 50px;
+  /*max-width: 100%;*/
+  /*border-radius: 50px;*/
   height: 60px;
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
 }
 
 .article .articleContent {

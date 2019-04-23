@@ -30,12 +30,17 @@ function APITime(source) {
 	xhr.open('GET', url + source + apiKey);
 	xhr.send();
 	xhr.onload = onSuccess;
+	xhr.onerror = onError;
 }
 
 function onSuccess() {
 	popUp.classList.add('hidden');
 	cleanData = JSON.parse(xhr.responseText);
   changeHTML(cleanData);
+}
+
+function onError(){
+	alert('Error loading results');
 }
 
 // Adding and formatting articles
@@ -92,29 +97,33 @@ function seeMore(buttonArray, data) {
 	});
 }
 
-// Clicking on Logo loads all three sources
+// Clicking on Logo loads all three sources - tried to use 'all' as the source but the API was throwing errors, so I did it this way, which feels a bit hack-y
 logo.addEventListener('click', function() {
+        popUp.classList.add('loader');
         popUp.classList.remove('hidden');
         APITime('cnn,espn,the-new-york-times');
 });
 
 // Source drop down - Should probably think of way to make this more DRY and not repeat code three times
 cnnLink.addEventListener('click', function() {
+        popUp.classList.add('loader');
         popUp.classList.remove('hidden');
         APITime('cnn');
 });
 
 espnLink.addEventListener('click', function() {
+        popUp.classList.add('loader');
         popUp.classList.remove('hidden');
         APITime('espn');
 });
 
 nytimesLink.addEventListener('click', function() {
+        popUp.classList.add('loader');
         popUp.classList.remove('hidden');
         APITime('the-new-york-times');
 });
 
-// Initial Call 
+// Initial Call - tried to use 'all' as the source but the API was throwing errors, so I did it this way, which feels a bit hack-y
 APITime('cnn,espn,the-new-york-times');
 
 
